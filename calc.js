@@ -11,6 +11,9 @@ function mult(a,b){
 	return a * b;
 }
 
+function divide (a, b){
+	return a / b;
+}
 function calc(){
 	var operation = process.argv[2];
 
@@ -24,8 +27,10 @@ function calc(){
 		console.log(add(a, b));
 	} else if (operation === 'substract'){
 		console.log(substract(a, b));
+	} else if(operation === 'mult'){
+		console.log(mult(a, b))
 	} else {
-		console.log (mult(a, b));
+		console.log (divide(a, b));
 	}
 
 	
